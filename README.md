@@ -1,46 +1,24 @@
-# OpenPair: Golang Intro 03
+# OpenPair: Golang Intro 04
 
 ![Cover Image](./cover.png)
 
-Welcome to `GoLang Intro 03`! This part of the series dives deeper into GoLang, exploring advanced concepts like interfaces, enhanced error handling, and concurrency, along with a focus on testing these features. Below you'll find an overview of the main code and its corresponding test file.
+Welcome to `GoLang Intro 04`! In this session of our series, we further explore GoLang, with a special focus on concurrency, pointers, and interfaces. These concepts are demonstrated through a series of examples in our `main.go` file. You can also find the corresponding study session recorded on my [YouTube channel](https://www.youtube.com/playlist?list=PL2NvA4OAtDRS2wBL2FvjiSlKCtcBrcFzc).
 
 ## Main Code (main.go)
 
-The `main.go` file demonstrates several advanced GoLang concepts:
+The `main.go` file in this session covers:
 
-- **Structs and Methods**: Introduction to structs with added fields and methods. We use an `Animal` struct as an example.
-- **Interfaces**: Illustration of how interfaces work in GoLang. We define a `Mover` interface and show how `Animal` implements this interface.
-- **Concurrency**: An enhanced concurrency example using goroutines, channels, and the `select` statement.
-- **Error Handling**: Demonstrating Go's approach to error handling with an enhanced divide function that includes error checking.
-
-## Test Code (main_test.go)
-
-The `main_test.go` file contains tests for the `main.go` file:
-
-- **TestSpeak**: Testing the `Speak` method of the `Animal` struct. It checks whether the animals return the correct sounds.
-- **TestMove**: Testing the `Move` method to verify if the `Animal` struct correctly implements the `Mover` interface.
+- **Concurrency**: Demonstrating Go's concurrency model using goroutines, channels, and the `select` statement. The examples range from basic synchronization of goroutines to more advanced patterns involving multiple channel communications.
+- **Pointers**: Introduction to pointers in Go, illustrating how they can be used to modify values and to implement methods with pointer receivers in structs.
+- **Interfaces**: Showcasing how interfaces are defined and implemented in Go. The examples include simple interfaces as well as more advanced uses demonstrating polymorphism.
 
 ## Running the Code
 
-To run the main program, use:
+To run the main program, execute the following in your terminal:
 
 ```bash
 go run main.go
 ```
-
-## Running the Tests
-
-To execute the tests, navigate to the directory containing your Go files and run:
-
-```bash
-go test
-```
-
-This command will run all the tests in your package. To run specific tests, use `go test -run TestName`, replacing `TestName` with the name of the test function.
-
----
-
-This README provides a comprehensive guide to your `GoLang Intro 03` content, making it easier for learners to understand the structure and purpose of your code and its tests.
 
 ## Useful Resources
 
